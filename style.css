@@ -1,0 +1,177 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateY(-20deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    animation: transitionIn 2s;
+}
+
+.main {
+    margin: 50px;
+    text-align: center;
+    }
+h1 {
+    color: aqua;
+    font-family: monospace;
+    font-size: 8em;
+
+}
+
+.spn {
+    color: white;
+    /* font-family: sans-serif;
+    font-size: 1.5em; */
+}
+
+input{
+    width: 700px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: aqua;
+    font-size: 30px;
+    color: white;
+    
+
+}
+
+input:focus{
+    background-color: white;
+    color: aqua;
+    transform: scale(1.1);
+    transition: ease-in-out 0.8s;
+    width: 750px;
+    height: 75px;
+}
+
+
+
+.main-btn {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color:aqua;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+
+.main-btn:hover{
+    background-color: white;
+    color: aqua;
+    font-size: 25px;
+    transition: 0.8s;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color :white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.btn {
+    margin-left: 5px;
+    background-color: aqua;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    
+    
+}
+.btn:hover{
+    background-color: white;
+    color: aqua;
+    font-size: 22px;
+    transition: 0.8s;
+}
+
+.dltBtn{
+    margin-left: 100px;
+}
+.list-sec {
+    /* background-color: white; */
+    width: 600px;    
+    text-align: center;
+    margin: auto auto;
+}
+
+.list-sec > ul > li {
+    /* text-decoration: underline; */
+    line-height: 80px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: left;
+}
+@media screen and (max-width :600px){
+    input{
+        width: 300px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: aqua;
+        font-size: 20px;
+        color: white;    
+
+    }
+    
+    
+ input:focus{
+    background-color: white;
+    color: aqua;
+    /* transform: scale(1.1); */
+    transition: ease-in-out 0.8s;
+    width: 320px;
+    height: 25px;
+}
+
+    
+    .main {
+        margin: auto;
+        text-align: center;
+        }
+    h1 {
+        font-size: 4em;
+        text-align: center;
+    }  
+
+    input::placeholder {
+        font-size: 15px;        
+    }
+
+    .main-btn {
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    
+   .main-btn:hover{
+    font-size: 15px;    
+    }
+
+    .btn {
+        font-size: 15px;  
+    }
+
+    .btn:hover{
+        font-size: 12px;
+
+    }
+}

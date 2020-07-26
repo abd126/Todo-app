@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>TODO<span class="spn">list</span></h1>
+        <div class="inp-sec">
+            <input type="text" id="todo" placeholder="What's Your Agenda.....">
+            <br><br>
+            <button onclick="Add()" id="addBtn" class="main-btn">Add Item</button>
+            <button onclick="DeletAll()" class="main-btn">Delet All</button>
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="list-sec">
+            <ul id="list">
+                
+            </ul>
+            
+        </div>
+
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
